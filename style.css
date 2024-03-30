@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  font-family: 'Kanit', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  box-shadow: 2px 2px 20px black;
+}
+
+.navbar .logo-img{
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.navbar .logo-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.navbar .logo-name{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/*Navbar end -----------------------*/
+
+/*Video Container Starts -----------------------*/
+
+
+
+.video-container{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*  .video-container {
+    
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+      margin: 0 auto;
+      width: 100%;
+      height: 200px;
+  }
+.video-container video {
+      width: 100%;
+      height: 100%;
+  }*/
+
+
+
+.videoDetails{
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+
+
+}
+.videoDetails .title{
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.videoDetails .uploadDateTime{
+  display: flex;
+  margin-top: 10px;
+}
+
+.videoDetails .uploadDateTime .date, .videoDetails .uploadDateTime .time{
+  padding: 2px 0;
+}
+
+.videoDetails .uploadDateTime .time {
+  padding: 2px 20px;
+}
+
+.videoDetails .uploadDateTime DTdata{
+  font-size: 20px;
+}
+
+
+
+hr{
+  margin: 10px 0px;
+}
+
+/*Video Container Ends -----------------------*/
+
+/*Related Contants Starts -----------------------*/
+
+.otherPosts{
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+
+
+}
+
+.otherPosts .heading{
+  font-size: 25px;
+}
+
+
+.otherPosts .cards{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  
+}
+.otherPosts .cards .card {
+  display: inline-block;
+  width: 200px;
+  height: 120px;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+  position: relative;
+  
+}
+.otherPosts .cards .card .poster{
+  background-color: black;
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0 0;
+  
+
+
+}
+.otherPosts .cards .card .poster img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+
+
+  
+}
+.otherPosts .cards .card .title{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0px;
+  padding: 0 0 2px 2px;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  background-color: black;
+
+}
+
+/*Related Contants Ends -----------------------*/
